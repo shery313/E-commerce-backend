@@ -1,0 +1,59 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #ff6347;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .cta-button {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta-button a {
+            background-color: #28a745;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>You Left Something Behind!</h1>
+        </div>
+        <div class="content">
+            <p>Hi {{ user.first_name }},</p>
+            <p>It looks like you forgot some items in your cart. Don't miss out on your favorite products!</p>
+            <p><strong>Your Cart:</strong></p>
+            <ul>
+                {% for item in cart_items %}
+                    <li>{{ item.product_name }} - {{ item.quantity }}</li>
+                {% endfor %}
+            </ul>
+            <div class="cta-button">
+                <a href="{{ cart_link }}">Complete Your Purchase</a>
+            </div>
+            <p>If you need any assistance, feel free to contact our support team.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #ff7f50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .cta-button {
+            margin: 20px;
+        }
+        .cta-button a {
+            background-color: #28a745;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>We Miss You!</h1>
+        </div>
+        <div class="content">
+            <p>Hi {{ user.first_name }},</p>
+            <p>It's been a while since we last saw you at Vivify Store. We've got new products and exclusive offers waiting for you!</p>
+            <div class="cta-button">
+                <a href="{{ store_link }}">Come Back and Shop</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff7f50;
+            color: #fff;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .cta-button {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta-button a {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to Vivify Store!</h1>
+        </div>
+        <div class="content">
+            <p>Hi {{ user.first_name }},</p>
+            <p>Thank you for signing up! We're thrilled to have you on board. Stay tuned for exclusive offers, latest products, and tips to make your shopping experience even better.</p>
+        </div>
+        <div class="cta-button">
+            <a href="{{ activation_link }}">Activate Your Account</a>
+        </div>
+        <div class="content">
+            <p>If you have any questions, feel free to reply to this email or contact us at support@vivifystore.com.</p>
+        </div>
+    </div>
+</body>
+</html>

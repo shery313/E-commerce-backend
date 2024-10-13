@@ -1,0 +1,57 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #1e90ff;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .cta-button {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta-button a {
+            background-color: #28a745;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Latest News from Vivify Store</h1>
+        </div>
+        <div class="content">
+            <p>Hi {{ user.first_name }},</p>
+            <p>Here are the latest updates and offers just for you!</p>
+            <ul>
+                <li><strong>New Product Launch:</strong> Check out our latest arrivals!</li>
+                <li><strong>Exclusive Offers:</strong> Don't miss our seasonal discounts.</li>
+                <li><strong>Blog Update:</strong> Read our latest blog post for shopping tips.</li>
+            </ul>
+            <div class="cta-button">
+                <a href="{{ store_link }}">Visit Vivify Store</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
