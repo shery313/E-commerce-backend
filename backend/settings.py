@@ -32,8 +32,8 @@ SECRET_KEY = 'django-insecure-b*tuoe%^o+=^35$0fufrm=oamh^(o0tabn39(7ni12(i-oup+4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["website-domain.com", "127.0.0.1"]
-CSRF_TRUSTED_ORIGINS = ['https://website-domain.com', 'https://127.0.0.1']
+ALLOWED_HOSTS = ["vivify-backend-2e2a6dca838b.herokuapp.com", "127.0.0.1"]
+CSRF_TRUSTED_ORIGINS = ['https://vivify-backend-2e2a6dca838b.herokuapp.com', 'https://127.0.0.1']
 SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
 
 
